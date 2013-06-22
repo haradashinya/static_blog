@@ -1,7 +1,19 @@
 body {
 }
+hgroup h1 a {
+  color: black;
+}
 * {
   line-height: 1.4em;
+}
+nav a{
+  margin-right: 1em;
+  text-decoration: underline;
+  font-size: 18px;
+}
+nav {
+  margin-bottom: 1em;
+
 }
 
 .page {
@@ -27,7 +39,6 @@ body {
   margin-left: 1em;
 }
 .page_content {
-  /* background: #ecf0f1; */
   border:   black solid 5px;
 
   padding: 1em;
@@ -37,4 +48,10 @@ body {
 #sidebar h1 {
   font-size: 20px;
 }
+
+#archive li a {
+  text-decoration: underline;
+}
+
+
 

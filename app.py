@@ -39,6 +39,11 @@ def rss():
 
 
 
+@app.route("/archive")
+def archive():
+    sorted_pages = sorted(pages,reverse=True,
+    key = lambda p: p.meta["date"] )
+    return render_template("all.html",pages=sorted_pages)
 
 
 

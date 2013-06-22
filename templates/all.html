@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+
+
+
+all
+{% block content %}
+{% for page in pages %}
+<section id="archive">
+  <ul><li><a href="{{page.path}}">{{page.title}}</a></li></ul>
+
+</section>
+{% endfor %}
+
+
+{% endblock content %}
