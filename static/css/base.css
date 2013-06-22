@@ -1,0 +1,35 @@
+body {
+}
+* {
+  line-height: 1.4em;
+}
+
+.page {
+}
+.page .page_title {
+  border-left: solid 10px red;
+  padding-left: 1em;
+}
+.page h1 {
+  font-size: 20px;
+}
+
+.page h2 {
+  font-size: 18px;
+}
+.page h3 {
+  font-size: 16px;
+}
+.page .date {
+  margin-top: 10px;
+}
+.page li {
+  margin-left: 1em;
+}
+.page_content {
+  /* background: #ecf0f1; */
+  border:   black solid 5px;
+
+  padding: 1em;
+}
+

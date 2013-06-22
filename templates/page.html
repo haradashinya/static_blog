@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+
+<section>
+  <div class="page_wrapper">
+    <div class="row">
+      <div class="twelve cols">
+        <div class="page_content">
+          <h1 class="page_title">{{page.title }}</h1>
+          {{page.html | safe}}
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <div class="footer_wrapper">
+  <div class="row">
+    <div class="twelve cols">
+      <span>{{page.date}}</span>
+    </div>
+  </div>
+  </div>
+
+
+
+</section>
+{% endblock %}
+
+

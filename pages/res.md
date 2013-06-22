@@ -1,0 +1,12 @@
+title: レスポンシブデザインの時にrowをwrapして横に敷き詰めたいケース
+date: 2013-05-14
+
+
+
+今回の場合だと.row は1140pxをグリッド化した奴なので、それをwrapした奴は無制限に横幅を持っていることがわかった。
+
+<script src="https://gist.github.com/okamurayasuyuki/5579035.js"></script>
+
+
+気がついたら朝の５時になっていたのでもう寝ないと。
+
