@@ -4,55 +4,26 @@
 
 
 {% block content %}
-<div class="row">
-  <div class="large-9 columns">
-    {% for page in pages %}
-    <section>
-    <dl>
-      <dt class="page_title"><h1>{{page.title}} </h1></dt>
-      <dd>
-      <p class="date">
-      <a href="{{page.path}}">{{page.date}}</a>
-      </p>
-
-      <div class="page_content">
-        {{page}}
-      </div>
-
-      </dd>
-      </p>
-    </dl>
-  </section>
-    {% endfor %}
-  </div>
-
-  <div class="large-3 columns">
-
-    <section>
-      <h3>作ったアプリ</h3>
+{% for page in pages %}
+<section>
+  <dl>
+    <dt class="page_title"><h1>{{page.title}} </h1></dt>
+    <dd>
 
 
-      <dl>
-        <dt>
-        <a href="https://itunes.apple.com/us/app/fan-yinyusu/id547876926?ls=1&mt=8">翻訳ニュース</a>
-        </dt>
-        <dd>
-        VOAニュースを英語の原稿と、日本語の原稿で同時に学べるアプリ。
-        </dd>
-      </dl>
-    </section>
+    <div class="page_content">
+      {{page}}
+    </div>
 
-    <section>
-      <h3>プロフィール</h3>
-      趣味でプログラミングしています。
-      iPhoneアプリ開発、岡村靖幸、ダンスが好き。
-      <a href="https://twitter.com/outsider_0219">Twitter</a>
-    </section>
+    </dd>
+    </p>
+  </dl>
 
+  <p class="date">
+  <a href="{{page.path}}">{{page.date}}</a>
+  </p>
+</section>
+{% endfor %}
 
-  </div>
-
-  </div>
-</div>
 
 {% endblock content %}

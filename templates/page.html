@@ -5,29 +5,23 @@
 
 
 <section>
-  <div class="page_wrapper">
-    <div class="row">
-      <div class="twelve cols">
-        <div class="page_content">
-          <h1 class="page_title">{{page.title }}</h1>
-          {{page.html | safe}}
-        </div>
-      </div>
+
+  <dl>
+    <dt class="page_title"><h1>{{page.title}} </h1></dt>
+    <dd>
+
+
+    <div class="page_content">
+      {{page}}
     </div>
 
+    </dd>
+    </p>
+  </dl>
 
-  </div>
-
-
-  <div class="footer_wrapper">
-  <div class="row">
-    <div class="twelve cols">
-      <span>{{page.date}}</span>
-    </div>
-  </div>
-  </div>
-
-
+  <p class="date">
+  <a href="{{page.path}}">{{page.date}}</a>
+  </p>
 
 </section>
 {% endblock %}
