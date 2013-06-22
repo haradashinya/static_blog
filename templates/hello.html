@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 
-{% block content %}
 
+
+
+{% block content %}
 <div class="row">
   <div class="large-9 columns">
     {% for page in pages %}
@@ -10,7 +12,7 @@
       <dt class="page_title"><h1>{{page.title}} </h1></dt>
       <dd>
       <p class="date">
-      {{page.date}}
+      <a href="{{page.path}}">{{page.date}}</a>
       </p>
 
       <div class="page_content">
