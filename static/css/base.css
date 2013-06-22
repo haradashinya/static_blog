@@ -8,10 +8,13 @@ hgroup h1 a {
 }
 nav a{
   margin-right: 1em;
-  text-decoration: underline;
   font-size: 18px;
+  border-left: solid 10px #888888;
+  padding-left: 10px;
 }
 nav {
+  border-bottom: solid 2px #ccc;
+  padding-bottom: 1em;
   margin-bottom: 1em;
 
 }
