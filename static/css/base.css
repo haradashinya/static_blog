@@ -53,5 +53,8 @@ nav {
   text-decoration: underline;
 }
 
+#archive .date {
+  display: block;
+}
 
 
