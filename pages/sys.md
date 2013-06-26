@@ -1,5 +1,5 @@
 date: 2013-06-27
-title: Python3
+title: Python3のimportの挙動
 
 
 Python3になって、importの挙動が変わったので今までのやり方ではうまく行かなくなった。
