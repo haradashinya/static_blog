@@ -3,27 +3,35 @@ body {
 hgroup h1 a {
   color: black;
 }
+hgroup h2 {
+  margin-top: -20px;
+  font-size: 16px;
+}
+a {
+  color: #c0392b;
+
+}
 * {
   line-height: 1.4em;
 }
 nav a{
   margin-right: 1em;
-  font-size: 18px;
-  border-left: solid 10px #888888;
-  padding-left: 10px;
+  font-size: 20px;
+  text-decoration: underline;
 }
 nav {
   border-bottom: solid 2px #ccc;
   padding-bottom: 1em;
   margin-bottom: 1em;
+  margin-top: 1em;
 
 }
+
 
 .page {
 }
-.page .page_title {
-  border-left: solid 10px red;
-  padding-left: 1em;
+.page .page_title a {
+  color: #c0392b;
 }
 .page h1 {
   font-size: 20px;
@@ -37,6 +45,10 @@ nav {
 }
 .page .date {
   margin-top: 10px;
+}
+.page .date a {
+  color: black;
+  text-decoration: underline;
 }
 .page li {
   margin-left: 1em;
