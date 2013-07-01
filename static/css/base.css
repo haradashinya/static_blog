@@ -22,13 +22,17 @@ nav a{
   text-decoration: underline;
 }
 nav {
-  border-bottom: solid 2px #ccc;
+  /* border-bottom: solid 2px #ccc; */
   padding-bottom: 1em;
   margin-bottom: 1em;
   margin-top: 1em;
 
 }
 
+.border {
+  margin-top: -20px;
+  border-bottom: solid 1px #ccc;
+}
 
 .page {
 }
