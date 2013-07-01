@@ -2,6 +2,8 @@ body {
 }
 hgroup h1 a {
   color: black;
+  text-shadow: 1px 1px #cccccc;
+
 }
 hgroup h2 {
   margin-top: -20px;
@@ -59,9 +61,11 @@ nav {
   padding: 1em;
 }
 
-
 #sidebar h1 {
   font-size: 20px;
+}
+#sidebar dl dt img {
+  padding: 10px 0px;
 }
 
 #archive li a {
