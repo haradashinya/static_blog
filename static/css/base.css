@@ -71,6 +71,11 @@ nav {
 #sidebar dl dt img {
   padding: 10px 0px;
 }
+#sidebar a {
+  display: block;
+}
+#sidebar dd {
+}
 
 #archive li a {
   text-decoration: underline;
