@@ -11,8 +11,12 @@ hgroup h2 {
 }
 a {
   color: #c0392b;
-
 }
+h1 {
+
+  color: #c0392b;
+}
+
 * {
   line-height: 1.4em;
 }

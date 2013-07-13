@@ -61,8 +61,9 @@ def index():
 
     return render_template("hello.html",pages=sorted_pages[0:20])
 
-@app.route("/<path:path>/")
-def page(path):
+# render detail view
+@app.route("/<path:path>/detail/")
+def detail(path):
     page = pages.get_or_404(path)
     page.meta["path"] = path
     return render_template('page.html', page=page)

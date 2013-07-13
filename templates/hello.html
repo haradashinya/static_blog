@@ -7,7 +7,7 @@
 {% for page in pages %}
 <section>
   <dl>
-    <dt class="page_title"><h1><a href="">{{page.title}} </a></h1></dt>
+    <dt class="page_title"><h1><a href="{{page.path+'/detail'}}">{{page.title}} </a></h1></dt>
     <dd>
 
 
@@ -20,7 +20,7 @@
   </dl>
 
   <p class="date">
-  <a href="{{page.path}}">{{page.date}}</a>
+  {{page.date}}
   </p>
 </section>
 {% endfor %}
