@@ -51,12 +51,6 @@ def archive():
 def index():
     sorted_pages = sorted(pages,reverse=True,
     key = lambda p: p.meta["date"] )
-    res = []
-    for item in sorted_pages:
-        words =  item.body.split("\n")
-        item.body = " ".join(words[0:2]) + "..."
-        res.append(item)
-    sorted_pages = res
 
 
     return render_template("hello.html",pages=sorted_pages[0:20])

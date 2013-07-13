@@ -12,7 +12,10 @@
 
 
     <div class="page_content">
-      {{page}}
+      {{" ".join( page.body.split("\n")[0:1]) |safe}}
+      <p>
+      <a href="{{page.path+'/detail'}}">(続きを読む)</a>
+      </p>
     </div>
 
     </dd>
