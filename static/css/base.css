@@ -93,3 +93,6 @@ nav {
 .hatebu {
   float: right;
 }
+.codehilite pre{
+  padding: 10px;
+}
