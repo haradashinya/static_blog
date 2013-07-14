@@ -8,8 +8,13 @@ date: 2013-07-15
 
     import subprocess
 
-    # curl -i でurlの情報を取得する場合
     proc = subprocess.Popen(['curl','-i',url],cwd='/',stdout =
         subprocess.PIPE)
+
+    # outに出力結果が表示される。
+
     out,err = proc.communicate()
+
+
+
 
