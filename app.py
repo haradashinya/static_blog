@@ -62,6 +62,12 @@ def detail(path):
     page.meta["path"] = path
     return render_template('page.html', page=page)
 
+@app.route("/<path:path>/")
+def detail(path):
+    page = pages.get_or_404(path)
+    page.meta["path"] = path
+    return render_template('page.html', page=page)
+
 @app.route("/apps")
 def apps():
     return render_template("apps.html")
