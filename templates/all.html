@@ -6,7 +6,7 @@
 {% block content %}
 {% for page in pages %}
 <section id="archive">
-  <ul><li><a href="{{page.path}}">{{page.title}}</a> <span class="date">{{page.date}}</span></li></ul>
+  <ul><li><a href="{{page.path+'/detail'}}">{{page.title}}</a> <span class="date">{{page.date}}</span></li></ul>
 
 </section>
 {% endfor %}
