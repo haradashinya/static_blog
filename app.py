@@ -13,6 +13,10 @@ app.config.from_object(__name__)
 pages = FlatPages(app)
 
 
+@app.route("/sitemap")
+def sitemap():
+    return render_template("sitemap.xml")
+
 @app.route("/rss")
 def rss():
     feed = feedgenerator.Rss201rev2Feed(
