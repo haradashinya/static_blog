@@ -4,6 +4,9 @@ import feedformatter,time
 import feedgenerator
 import datetime
 
+
+
+
 DEBUG = True
 FLATPAGES_AUTO_RELOAD = DEBUG
 FLATPAGES_EXTENSION = ".md"
@@ -16,6 +19,17 @@ pages = FlatPages(app)
 @app.route("/sitemap")
 def sitemap():
     return render_template("sitemap.xml")
+
+@app.route("/memo/detail/")
+def memo():
+
+    sorted_pages = sorted(pages,reverse=True,
+    key = lambda p: p.meta["date"] )
+    for page in sorted_pages:
+        if page.meta.get("memo"):
+            print "exists"
+    memo_pages = [page for page in sorted_pages if page.meta.get("memo")]
+    return render_template("all.html",pages=memo_pages)
 
 @app.route("/rss")
 def rss():

@@ -8,9 +8,12 @@ env.user = "haradashinya"
 env.hosts = ["ubuntu@54.249.237.92"]
 env.key_filename = ["%s/pickalize.pem" %HOME]
 
+
+
+
 def try_cmd(host_type,cmd):
     run_cmd = host_type(cmd)
-    
+
 def host_type():
     run("uname -s")
 

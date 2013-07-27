@@ -23,6 +23,7 @@ h1 {
 nav a{
   margin-right: 1em;
   font-size: 20px;
+  line-height: 44px;
   text-decoration: underline;
 }
 nav {
@@ -30,6 +31,7 @@ nav {
   padding-bottom: 1em;
   margin-bottom: 1em;
   margin-top: 1em;
+
 
 }
 

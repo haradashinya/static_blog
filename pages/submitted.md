@@ -1,6 +1,7 @@
 title: やっと... AppStoreに提出できた
 date: 2013-02-17
 
+ff
 やっとAppStoreに提出できた。
 
 このアプリは、クオリティは低いのに、無駄に苦労してしまっていて、最初Javascriptで作って、その後、パフォーマンスが出ないので、ActionScriptを学んで、ActionScriptで作ったんだけど、音がうまく出なくて、結局Objective-Cで作ったので、とても感慨深い。
