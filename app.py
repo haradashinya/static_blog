@@ -1,3 +1,4 @@
+#coding: utf-8
 from flask import Flask,render_template,redirect,url_for
 from flask_flatpages import FlatPages,pygments_style_defs
 from flask import g
@@ -70,9 +71,7 @@ def archive():
 def index():
     sorted_pages = sorted(pages,reverse=True,
     key = lambda p: p.meta["date"] )
-
-
-    return render_template("hello.html",pages=sorted_pages[0:20])
+    return render_template("hello.html",pages=sorted_pages[0:20],tilte = u"Pickalizeのブログ")
     # http://pickalize.info/sublime_setting/detail/
 
 # render detail view
@@ -81,7 +80,7 @@ def detail(path):
 	page = pages.get_or_404(path)
 	g.foo = "foo"
 	page.meta["path"] = path
-	return render_template('page.html', page=page)
+	return render_template('page.html', page=page,title=page.title)
 
 @app.route("/<path:path>/")
 def detail(path):
