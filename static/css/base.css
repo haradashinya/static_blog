@@ -7,7 +7,6 @@ hgroup h1 a {
 
 }
 hgroup h2 {
-  margin-top: -20px;
   font-size: 16px;
   color: #A5693C;
 }
@@ -29,7 +28,7 @@ nav a{
   color: #A5693C;
 }
 .header {
-  background: #372312
+  background: #372312;
 }
 nav {
   /* border-bottom: solid 2px #ccc; */
@@ -37,18 +36,13 @@ nav {
   margin-bottom: 1em;
   margin-top: 1em;
 
-
+}
+nav div {
+  float: left;
+  padding-right: 20px;
 }
 
-.border {
-  margin-top: -20px;
-  border-bottom: solid 1px #ccc;
-}
 
-.page {
-  padding-right: 25px;
-  border-right: solid 1px #ccc;
-}
 .page .page_title a {
   color: #c0392b;
 }
@@ -103,5 +97,14 @@ nav {
   float: right;
 }
 .codehilite pre{
+
   padding: 10px;
+}
+
+
+.clearfix {zoom:1;}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
 }
