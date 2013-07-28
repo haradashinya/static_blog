@@ -1,19 +1,20 @@
 body {
 }
 hgroup h1 a {
-  color: black;
+  color: #372312;
   text-shadow: 1px 1px #cccccc;
+  color: white;
 
 }
 hgroup h2 {
   margin-top: -20px;
   font-size: 16px;
+  color: #A5693C;
 }
 a {
   color: #c0392b;
 }
 h1 {
-
   color: #c0392b;
 }
 
@@ -25,6 +26,10 @@ nav a{
   font-size: 20px;
   line-height: 44px;
   text-decoration: underline;
+  color: #A5693C;
+}
+.header {
+  background: #372312
 }
 nav {
   /* border-bottom: solid 2px #ccc; */
@@ -41,6 +46,8 @@ nav {
 }
 
 .page {
+  padding-right: 25px;
+  border-right: solid 1px #ccc;
 }
 .page .page_title a {
   color: #c0392b;
