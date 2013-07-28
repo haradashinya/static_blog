@@ -17,6 +17,13 @@ app = Flask(__name__)
 app.config.from_object(__name__)
 pages = FlatPages(app)
 
+def title(title = None):
+	if title is None:
+		return 'none'
+	return title
+
+
+
 
 @app.route("/sitemap")
 def sitemap():
@@ -67,18 +74,23 @@ def archive():
 
 
 
+
+app.jinja_env.globals['title'] = title
+
 @app.route("/")
 def index():
-    sorted_pages = sorted(pages,reverse=True,
-    key = lambda p: p.meta["date"] )
-    return render_template("hello.html",pages=sorted_pages[0:20],tilte = u"Pickalizeのブログ")
+
+	sorted_pages = sorted(pages,reverse=True,
+		key = lambda p: p.meta["date"] )
+
+	return render_template("hello.html",pages=sorted_pages[0:20],page = None)
     # http://pickalize.info/sublime_setting/detail/
 
 # render detail view
 @app.route("/<path:path>/detail/")
 def detail(path):
 	page = pages.get_or_404(path)
-	g.foo = "foo"
+	app.jinja_env.globals['title'] = page.title
 	page.meta["path"] = path
 	return render_template('page.html', page=page,title=page.title)
 
@@ -107,7 +119,7 @@ def scripts():
 
 
 
-
+[]
 
 if __name__ == "__main__":
     app.debug=True
