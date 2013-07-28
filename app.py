@@ -1,5 +1,6 @@
 from flask import Flask,render_template,redirect,url_for
 from flask_flatpages import FlatPages,pygments_style_defs
+from flask import g
 import feedformatter,time
 import feedgenerator
 import datetime
@@ -72,13 +73,15 @@ def index():
 
 
     return render_template("hello.html",pages=sorted_pages[0:20])
+    # http://pickalize.info/sublime_setting/detail/
 
 # render detail view
 @app.route("/<path:path>/detail/")
 def detail(path):
-    page = pages.get_or_404(path)
-    page.meta["path"] = path
-    return render_template('page.html', page=page)
+	page = pages.get_or_404(path)
+	g.foo = "foo"
+	page.meta["path"] = path
+	return render_template('page.html', page=page)
 
 @app.route("/<path:path>/")
 def detail(path):
