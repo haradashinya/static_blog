@@ -6,7 +6,7 @@ date: 2013-07-28
 ##解決策
 ----
 
-	{% with <tit></tit>le= page.title %}
+	{% with title= page.title %}
 	{% include "base.html" %}
 	{% endwith %}
 
