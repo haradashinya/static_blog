@@ -22,16 +22,12 @@ def title(title = None):
 		return 'none'
 	return title
 
-
-
-
 @app.route("/sitemap")
 def sitemap():
     return render_template("sitemap.xml")
 
 @app.route("/memo/detail/")
 def memo():
-
     sorted_pages = sorted(pages,reverse=True,
     key = lambda p: p.meta["date"] )
     for page in sorted_pages:
@@ -60,20 +56,11 @@ def rss():
 
     return feed.writeString('utf-8')
 
-
-
-
-
-
-
 @app.route("/archive")
 def archive():
     sorted_pages = sorted(pages,reverse=True,
     key = lambda p: p.meta["date"] )
     return render_template("all.html",pages=sorted_pages)
-
-
-
 
 app.jinja_env.globals['title'] = title
 
@@ -116,10 +103,6 @@ def profile():
 @app.route("/scripts")
 def scripts():
     return render_template("scripts.html")
-
-
-
-[]
 
 if __name__ == "__main__":
     app.debug=True

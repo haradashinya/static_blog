@@ -15,7 +15,7 @@ I want to make a simple blogging system for me which  following the functonality
 
 
 ## This blog is powerd by
-- Flask 
+- Flask
 - Frozen-Flask
 - Flask-FlatPages
 
@@ -24,7 +24,7 @@ I want to make a simple blogging system for me which  following the functonality
 + Edit it like this.
 
 ``` yaml
-title: My Title 
+title: My Title
 date: 2013-01-03
 
 body is here.
@@ -45,6 +45,8 @@ body is here.
 	fab push
 ```
 
+## 以下のURLでご覧になれます。
+http://pickalize.info/
 
 
 
