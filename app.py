@@ -60,7 +60,9 @@ def rss():
 def archive():
     sorted_pages = sorted(pages,reverse=True,
     key = lambda p: p.meta["date"] )
+    print len(sorted_pages)
     return render_template("all.html",pages=sorted_pages)
+
 
 app.jinja_env.globals['title'] = title
 
