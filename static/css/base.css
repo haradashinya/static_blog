@@ -94,8 +94,17 @@ nav div {
 #sidebar dd {
 }
 
+#archive ul li {
+  list-style-type: none;
+  background: #EFEDE0;
+  font-weight: bold;
+  margin-left: -5px;
+  padding: 10px;
+  border-left: 10px solid #E06245;
+}
+
+
 #archive li a {
-  text-decoration: underline;
 }
 
 #archive .date {
