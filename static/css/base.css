@@ -118,3 +118,8 @@ nav div {
   display: block;
   clear: both;
 }
+footer {
+  margin-top: 40px;
+  height: 120px;
+  background: #372312;
+}
