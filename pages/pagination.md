@@ -1,8 +1,7 @@
 title: paginationというライブラリを作った
 date: 2013-08-06
 
-<a href="https://github.com/okamurayasuyuki/pagination">pagination</a>という
-ライブラリを作った。
+<a href="https://github.com/okamurayasuyuki/pagination">pagination</a>というライブラリを作った。
 
 複数の動画をペジネーションする際のアルゴリズムを考えなければならなかったので、
 実装した。今までの自分だったら実装できていなかったと思うぐらいの難易度だけど、
