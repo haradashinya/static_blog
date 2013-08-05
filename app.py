@@ -77,11 +77,12 @@ def index():
 
 # render detail view
 @app.route("/<path:path>/detail/")
-def detail(path):
+def d(path):
 	page = pages.get_or_404(path)
-	app.jinja_env.globals['title'] = page.title
+	title = u"%s" % page.meta["title"]
+	app.jinja_env.globals['title'] = title
 	page.meta["path"] = path
-	return render_template('page.html', page=page,title=page.title)
+	return render_template('page.html', page=page,title=title)
 
 @app.route("/<path:path>/")
 def detail(path):
