@@ -7,7 +7,8 @@
 {% for page in pages %}
 <section>
   <dl>
-    <dt class="page_title"><h1><a href="{{page.path+'/detail'}}">{{page.title}} </a></h1></dt>
+    <dt class="page_title"><h1><a href="{{page.path+'/detail'}}">{{page.title}}</a></h1></dt>
+
     <div class="tags">
       {% if page.tags %}
       {% for tag in page.tags.split(",") %}
@@ -25,14 +26,10 @@
       <a href="{{page.path+'/detail'}}">(続きを読む)</a>
       </p>
     </div>
-
     </dd>
-    </p>
+
   </dl>
 
-  <p class="date">
-  {{page.date}}
-  </p>
 </section>
 {% endfor %}
 
