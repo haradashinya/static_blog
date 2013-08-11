@@ -1,4 +1,4 @@
-title: 仮想環境に開発環境を構築した (Ubuntu)
+title: 仮想環境に開発環境を構築
 date: 2013-08-09
 tags: ubuntu,vagrant
 
