@@ -26,6 +26,8 @@ def title(title = None):
 def sitemap():
     return render_template("sitemap.xml")
 
+
+
 @app.route("/memo/detail/")
 def memo():
     sorted_pages = sorted(pages,reverse=True,
@@ -55,12 +57,29 @@ def rss():
                 )
 
     return feed.writeString('utf-8')
+@app.route("/tags/<name>")
+def tags(name):
+    tag_page = [page for page in pages if page.meta.get("tags") is not None]
+    res = []
+    for page in tag_page:
+        if name in page.meta.get("tags").split(","):
+            res.append(page)
+
+
+    sorted_pages = sorted(res,reverse=True,
+    key = lambda p: p.meta["date"] )
+    return render_template("all.html",pages=sorted_pages)
+
 
 @app.route("/archive")
 def archive():
+    for p in pages:
+        print p.meta.get("tags")
+
+    print p
     sorted_pages = sorted(pages,reverse=True,
+
     key = lambda p: p.meta["date"] )
-    print len(sorted_pages)
     return render_template("all.html",pages=sorted_pages)
 
 
