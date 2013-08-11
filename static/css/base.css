@@ -14,6 +14,9 @@ hgroup h2 {
 a {
   color: #c0392b;
 }
+a:hover {
+  color: #2c3e50;
+}
 h1 {
   color: #c0392b;
 }
@@ -29,13 +32,14 @@ nav a{
   color: #A5693C;
   color: white;
 }
+nav a:hover {
+  color: #2c3e50;
+}
 .header {
-  //background: #372312;
   padding-bottom: 10px;
   background: #3498db;
 }
 nav {
-  /* border-bottom: solid 2px #ccc; */
   padding-bottom: 1em;
   margin-bottom: 1em;
   margin-top: 1em;
@@ -57,10 +61,8 @@ nav div {
   color: #c0392b;
 }
 .page h1 {
-  border-left: solid 10px #e74c3c;
-  padding-left: 10px;
   padding-bottom: 20px;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 30px;
   height: 30px;
 }
@@ -100,14 +102,17 @@ nav div {
 }
 
 #archive ul li {
-  list-style-type: none;
-  background: #EFEDE0;
   font-weight: bold;
-  margin-left: -5px;
-  padding: 10px;
-  border-left: 10px solid #E06245;
 }
 
+#archive .date {
+  font-weight: normal;
+}
+#archive .item {
+  padding-bottom: 10px;
+}
+#archive .tags {
+}
 
 #archive li a {
 }
@@ -139,6 +144,6 @@ nav div {
 footer {
   margin-top: 40px;
   height: 120px;
-  background: #372312;
+  background: #3498db;
 }
 
