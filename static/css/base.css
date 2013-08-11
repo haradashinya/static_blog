@@ -51,6 +51,7 @@ nav div {
 }
 
 
+
 .page .page_title a {
   color: #c0392b;
 }
@@ -103,7 +104,9 @@ nav div {
   font-weight: normal;
 }
 #archive .item {
-  padding-bottom: 10px;
+  padding: 10px;
+  background: white;
+  margin-bottom: 30px;
 }
 #archive .tags {
 }
