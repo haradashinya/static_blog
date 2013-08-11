@@ -1,5 +1,6 @@
 title: iOS開発のために画像を編集するやつ作った.
 date: 2013-02-17
+tags: python
 
 
 [resizer](https://github.com/okamurayasuyuki/resizer)を作った。

@@ -1,5 +1,6 @@
 title: BeautifulSoupがすごく便利
 date: 2013-07-10
+tags: python
 
 スクレイピングするときに <a href="http://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a>がすごく便利だったので使い方を簡単にメモしておく。
 

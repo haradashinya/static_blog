@@ -1,5 +1,6 @@
 title: Python3+Flaskでファイルを保存する
 date: 2013-07-07
+tags: python,flask
 
 flask+Python3で画像をformタグから取得する方法を調べて解決できたのでメモ。
 

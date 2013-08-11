@@ -1,5 +1,6 @@
 date: 2013-06-18
 title: Sign in with Facebook by Python3
+tags: python
 
 
 FlaskがPython3に対応したので、早速アップグレードした。

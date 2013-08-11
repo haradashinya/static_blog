@@ -1,5 +1,6 @@
 title: Flaskでjsonpを使う
 date: 2013-03-21
+tags: python
 
 
 複数のサーバーを通信させるスクリプトを
