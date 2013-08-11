@@ -1,5 +1,6 @@
 title: Jinja2で親テンプレートに引数を渡す方法
 date: 2013-07-28
+tags: python
 
 ブログ記事に使用されていた"page.html"のタイトルを"base.html"のtitleタグに入れたかったのでメモ。
 

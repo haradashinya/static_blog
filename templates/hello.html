@@ -8,6 +8,13 @@
 <section>
   <dl>
     <dt class="page_title"><h1><a href="{{page.path+'/detail'}}">{{page.title}} </a></h1></dt>
+    <div class="tags">
+      {% if page.tags %}
+      {% for tag in page.tags.split(",") %}
+      <a href="/tags/{{tag}}">{{tag}}</a>
+      {% endfor %}
+      {% endif %}
+    </div>
     <dd>
 
 

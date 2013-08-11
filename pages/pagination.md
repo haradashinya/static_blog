@@ -1,5 +1,6 @@
 title: paginationというライブラリを作った
 date: 2013-08-06
+tags: python
 
 <a href="https://github.com/okamurayasuyuki/pagination">pagination</a>というライブラリを作った。
 

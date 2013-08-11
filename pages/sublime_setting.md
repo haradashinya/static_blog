@@ -1,6 +1,7 @@
 date: 2013-07-27
 title: Sublime Text3を導入してみた
 memo: true
+tags: sublime
 
 今までVimを使っていたけど、思い切ってSublime Text3を導入してみた。理由はもう歳なのでVimのプラグインを入れてコンフリクトしたりするのを修正するような細かい環境構築の作業が面倒だと思うようになってきたから。
 
