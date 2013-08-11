@@ -6,6 +6,7 @@ hgroup {
 }
 hgroup h1 a {
   color: white;
+  font-size: 50px;
 }
 a {
   color: #c0392b;
@@ -22,16 +23,14 @@ h1 {
 nav a{
   margin-right: 1em;
   font-size: 20px;
-  line-height: 44px;
   text-decoration: underline;
   color: #A5693C;
-  color: white;
-}
-nav a:hover {
 }
 .header {
-  padding-bottom: 10px;
   background: #303030;
+}
+#nav_wrapper {
+  background: white;
 }
 nav {
   padding-bottom: 1em;
@@ -144,3 +143,7 @@ footer {
   background: #303030;
 }
 
+.codehilite{
+  padding-bottom: 20px;
+
+}
