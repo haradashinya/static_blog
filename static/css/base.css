@@ -1,21 +1,16 @@
 body {
   background: #ecf0f1;
 }
-hgroup h1 a {
-  color: #372312;
-  text-shadow: 1px 1px #cccccc;
-  color: white;
-
+hgroup {
+  padding-top: 30px;
 }
-hgroup h2 {
-  font-size: 16px;
+hgroup h1 a {
   color: white;
 }
 a {
   color: #c0392b;
 }
 a:hover {
-  color: #2c3e50;
 }
 h1 {
   color: #c0392b;
@@ -33,11 +28,10 @@ nav a{
   color: white;
 }
 nav a:hover {
-  color: #2c3e50;
 }
 .header {
   padding-bottom: 10px;
-  background: #3498db;
+  background: #303030;
 }
 nav {
   padding-bottom: 1em;
@@ -144,6 +138,6 @@ nav div {
 footer {
   margin-top: 40px;
   height: 120px;
-  background: #3498db;
+  background: #303030;
 }
 
