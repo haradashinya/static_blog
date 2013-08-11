@@ -24,7 +24,8 @@ nav a{
   margin-right: 1em;
   font-size: 20px;
   text-decoration: underline;
-  color: #A5693C;
+  color: #303030;
+  line-height: 30px;
 }
 .header {
   background: #303030;
@@ -33,9 +34,9 @@ nav a{
   background: white;
 }
 nav {
-  padding-bottom: 1em;
   margin-bottom: 1em;
   margin-top: 1em;
+  height: 30px;
 
 }
 nav div {
