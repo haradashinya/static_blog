@@ -87,6 +87,11 @@ nav div {
 #sidebar h1 {
   font-size: 20px;
 }
+#sidebar h2 {
+  font-size: 14px;
+}
+#sidebar .tag_list {
+}
 #sidebar dl dt img {
   padding: 10px 0px;
 }
