@@ -1,5 +1,6 @@
 date: 2013-08-13
 title: How to Sign in with Twitter using Flask
+tags: python
 
 Twitter でログイン認証をする必要性が出てきたので、最小限のコードを書いてみた。便利なので使いまわす。
 
