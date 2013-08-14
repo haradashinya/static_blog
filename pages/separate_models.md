@@ -9,9 +9,9 @@ SQLAlchemy()オブジェクトをシェアするようなモジュールを作�
 
 ##例
 
-models/ -> shared.py
-		   user.py
-		   video.py
+models/shared.py
+models/user.py
+models/video.py
 
 みたいにする。shared.pyの中には、
 
