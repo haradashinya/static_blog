@@ -73,10 +73,7 @@ def tags(name):
 
 @app.route("/archive")
 def archive():
-    for p in pages:
-        print p.meta.get("tags")
 
-    print p
     sorted_pages = sorted(pages,reverse=True,
 
     key = lambda p: p.meta["date"] )
