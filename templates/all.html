@@ -5,7 +5,7 @@
 {% for page in pages %}
 <section id="archive">
   <div class="item">
-    <h3><a href="/{{page.path+'/detail'}}">{{page.title}} -- {{page.date}}</a></h3>
+    <a href="/{{page.path+'/detail'}}">{{page.title}}</a>
   <div class="tags">
     {% if page.tags %}
     {% for tag in page.tags.split(",") %}
