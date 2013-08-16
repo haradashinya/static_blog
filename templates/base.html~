@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>pickalize</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<meta name="description" content="An Iphone app Developer's blog. Iphoneアプリの開発者ブログ Pythonも好き.">
+<meta name="keywords" content="Iphone,ios,iphone,web programming programmer android ブログ アプリ Python Web html5">
+
+<meta name="author" content="">
+<link rel="stylesheet" href="/static/css/prism.css"/>
+<link rel="stylesheet" href='/static/css/github.css'/>
+<link rel="stylesheet" href="/static/css/normalize.css"/>
+<link rel="stylesheet" href="/static/css/base.css"/>
+<link rel="stylesheet" href="/static/css/app.css"/>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+</head>
+
+<body>
+
+
+    <header>
+            <div id="header-container">
+                <div class="row">
+                    <div class="twelve cols">
+                      <h1 id="logo"><a href="/"><span class="title-s">Pickalize</a></h1>
+                        <div id="menu-icon">
+                          <a href="https://github.com/okamurayasuyuki"><img src="/static/img/github.png"> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+  
+
+
+  <div class="page">
+          {% block content %}
+
+
+          {% endblock content %}
+
+  </div>
+
+
+
+
+
+<script src="/static/js/rainbow.js"></script>
+<script src="/static/js/languages/javascript.js"></script>
+<script src="/static/js/languages/generic.js"></script>
+<script src="/static/js/languages/python.js"></script>
+<script src="/static/js/jquery.js"></script>
+
+
+<!--google analytics-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-15508754-4']);
+	  _gaq.push(['_trackPageview']);
+
+	    (function() {
+			    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+					    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+						  })();
+// google feed
+
+
+google.load("feeds","1");
+var init = function(){
+};
+google.setOnLoadCallback(init);
+
+</script>
+
+</div>
+
+</body>
+
+</html>
+
+

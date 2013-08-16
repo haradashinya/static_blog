@@ -1,0 +1,25 @@
+
+
+
+{% extends "base.html" %}
+{% block content %}
+<div class="page-content">
+  <div class="row">
+    <div class="twelve cols force-one">
+      <ul class="article_list">
+        {% for page in pages %}
+        <li class="article_title">
+          <a href="{{url_for("page",path=page.path)}}">{{page.title }} <span class="date">({{page.meta.date}})</span></a>
+        </li>
+        {% else %}
+        <li> no pages</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {# <div class="six cols">ff</div> #}
+  </div>
+</div>
+
+{% endblock content %}
+
+

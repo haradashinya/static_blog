@@ -135,7 +135,15 @@ nav div {
   padding-right: 5px;
   color: #3498db;
 }
+.tags {
+  display: block;
+}
 
+section h1 {
+  height: 40px;
+  display: block;
+  vertical-align:  middle;
+}
 
 .clearfix {zoom:1;}
 .clearfix:after {
@@ -148,8 +156,21 @@ footer {
   height: 120px;
   background: #303030;
 }
+@media screen and (max-width:640px) {
+section h1 {
+  background: red;
+  /* style */
+}
+}
+
 
 .codehilite{
   padding-bottom: 20px;
 
 }
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
