@@ -118,6 +118,8 @@ nav div {
   padding:20px;
   background: white;
   margin-bottom: 30px;
+  box-shadow: 5px 5px 5px #ccc;
+  border-radius: 5px;
 }
 .item h2 {
  }
