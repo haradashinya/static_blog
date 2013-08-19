@@ -34,7 +34,10 @@ nav a{
   color: #303030;
   font-family: 'Cabin Condensed';
   height: 30px;
-  line-height: 30px;
+  line-height: 50px;
+  width: 100px;
+  height: 50px;
+  display: block;
 }
 
 .header {
@@ -44,14 +47,10 @@ nav a{
   background: white;
 }
 nav {
-  margin-bottom: 1em;
-  margin-top: 1em;
-  height: 30px;
 
 }
 nav div {
   float: left;
-  padding-right: 20px;
 }
 .page {
   margin-top: 30px;
