@@ -127,6 +127,7 @@ pre{
   background: #191919;
   color: #27ae60;
   padding: 20px ;
+  margin: 20px 0px;
 }
 code {
   color: #27ae60;
@@ -162,11 +163,7 @@ footer {
   height: 120px;
   background: #303030;
 }
-@media screen and (max-width:640px) {
-section h1 {
-  /* style */
-}
-}
+
 
 
 .codehilite{
