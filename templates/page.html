@@ -9,9 +9,10 @@
     </div>
   </div>
 
+
+  {% if page.tags %}
   <div class='row'>
   <div class="large-12 small-12 columns">
-  {% if page.tags %}
   <div class="tags">
   {% for tag in page.tags.split(",") %}
     <a href="/tags/{{tag}}">{{tag}}</a>
@@ -20,8 +21,8 @@
   </div>
   </div>
 
-  {% endif %}
   </div>
+  {% endif %}
 
 
   <div class="row">
