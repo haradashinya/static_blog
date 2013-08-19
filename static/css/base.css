@@ -123,12 +123,20 @@ nav div {
 .hatebu {
   margin-left: 15px;
 }
-.codehilite pre{
+pre{
   background: #191919;
   color: #27ae60;
-
   padding: 20px ;
 }
+code {
+  color: #27ae60;
+
+  background: #191919;
+  font-family: sans-serif;
+  font-size: 14px;
+
+}
+
 .tags a{
   padding-right: 5px;
   color: #3498db;
