@@ -117,9 +117,10 @@ nav div {
 .item {
   padding:20px;
   background: white;
-  /*background: #191919;*/
   margin-bottom: 30px;
 }
+.item h2 {
+ }
 #archive .tags {
 }
 
@@ -135,6 +136,8 @@ nav div {
   margin-left: 15px;
 }
 .codehilite pre{
+  background: #191919;
+  color: #27ae60;
 
   padding: 10px;
 }
@@ -172,6 +175,7 @@ section h1 {
 
 .codehilite{
   padding-bottom: 20px;
+
 
 }
 .title {
