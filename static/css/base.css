@@ -1,5 +1,6 @@
 body {
   background: #ecf0f1;
+
 }
 hgroup {
   padding-top: 30px;
@@ -12,6 +13,7 @@ hgroup h1 a {
 }
 a,.title {
   color: #c0392b;
+  font-family: 'Chau Philomene One'
 }
 a:hover {
 }
@@ -30,9 +32,11 @@ nav a{
   margin-right: 1em;
   font-size: 20px;
   color: #303030;
-  font-family: 'Cabin Condensed'
+  font-family: 'Cabin Condensed';
+  height: 30px;
   line-height: 30px;
 }
+
 .header {
   background: #303030;
 }
