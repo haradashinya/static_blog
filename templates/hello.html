@@ -6,8 +6,7 @@
 {% block content %}
 {% for page in pages %}
 <section>
-  <dl>
-    <dt class="page_title"><h3><a href="{{page.path+'/detail'}}">{{page.title}}</a></h3></dt>
+    <h2><a href="{{page.path+'/detail'}}">{{page.title}}</a></h2>
 
     <div class="tags">
       {% if page.tags %}
@@ -16,7 +15,6 @@
       {% endfor %}
       {% endif %}
     </div>
-    <dd>
 
 
     <div class="page_content">
@@ -26,9 +24,7 @@
       <a href="{{page.path+'/detail'}}">(続きを読む)</a>
       </p>
     </div>
-    </dd>
 
-  </dl>
 
 </section>
 {% endfor %}

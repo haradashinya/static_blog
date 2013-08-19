@@ -16,6 +16,10 @@ a:hover {
 h1 {
   color: #c0392b;
 }
+h2 {
+  line-height: 1.6em;
+  font-size: 18px;
+}
 
 * {
   line-height: 1.4em;
