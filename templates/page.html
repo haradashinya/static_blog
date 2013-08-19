@@ -2,22 +2,22 @@
 
 {% block content %}
 
-<section>
+<section class="item">
   <div class="row">
     <div class="small-12 columns">
-        <h1 class="title">{{page.title}} -- {{page.date}}</h1>
+        <h2 class="title">{{page.title}} -- {{page.date}}</h2>
     </div>
   </div>
 
   <div class='row'>
+  <div class="large-12 small-12 columns">
   {% if page.tags %}
   <div class="tags">
   {% for tag in page.tags.split(",") %}
-  <div class="small-4 columns">
     <a href="/tags/{{tag}}">{{tag}}</a>
-  </div>
   {% endfor %}
 
+  </div>
   </div>
 
   {% endif %}

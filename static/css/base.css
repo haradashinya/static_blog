@@ -114,9 +114,10 @@ nav div {
 #archive .date {
   font-weight: normal;
 }
-#archive .item {
-  padding: 10px;
+.item {
+  padding:20px;
   background: white;
+  /*background: #191919;*/
   margin-bottom: 30px;
 }
 #archive .tags {
