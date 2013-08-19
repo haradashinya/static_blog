@@ -78,15 +78,9 @@ nav div {
 .page h3 {
   font-size: 16px;
 }
-.page .date {
-  margin-top: -15px;
-  background: red;
+.date {
 }
 
-.page .date a {
-  color: black;
-  text-decoration: underline;
-}
 .page li {
   margin-left: 1em;
 }
