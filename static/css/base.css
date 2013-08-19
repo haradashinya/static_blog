@@ -7,6 +7,8 @@ hgroup {
 hgroup h1 a {
   color: white;
   font-size: 50px;
+  font-family: 'Chau Philomene One'
+
 }
 a,.title {
   color: #c0392b;
@@ -27,8 +29,8 @@ h2 {
 nav a{
   margin-right: 1em;
   font-size: 20px;
-  text-decoration: underline;
   color: #303030;
+  font-family: 'Cabin Condensed'
   line-height: 30px;
 }
 .header {
