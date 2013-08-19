@@ -69,8 +69,10 @@ nav div {
   font-size: 16px;
 }
 .page .date {
-  float: right;
+  margin-top: -15px;
+  background: red;
 }
+
 .page .date a {
   color: black;
   text-decoration: underline;
@@ -125,7 +127,7 @@ nav div {
 
 
 .hatebu {
-  float: right;
+  margin-left: 15px;
 }
 .codehilite pre{
 
