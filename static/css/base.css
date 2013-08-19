@@ -85,27 +85,13 @@ nav div {
   margin-left: 1em;
 }
 .page_content {
-
   padding: 20px 0px;
-
 }
-
-#sidebar h1 {
-  font-size: 20px;
-}
-#sidebar h2 {
-  font-size: 14px;
-}
-#sidebar .tag_list {
-}
-#sidebar dl dt img {
-  padding: 10px 0px;
-}
-#sidebar a {
-  display: block;
-}
-#sidebar dd {
-}
+.page_content h2 {
+  border-left: solid 10px #4DAAAB;
+  padding-left: 10px;
+  background: #F8F2D4;
+  }
 
 #archive ul li {
   font-weight: bold;
@@ -180,9 +166,10 @@ section h1 {
 
 
 }
-.title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
+h2.title {
+  border: none;
+  font-size: 24px;
+  line-height: 1.6em;
 }
+
 
