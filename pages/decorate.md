@@ -5,7 +5,7 @@ tags: python,flask
 ケースとしてログインしたユーザーにだけ、見せたい情報があって、それ以外の人が訪れた場合は、ログインしてくださいみたいなメッセージを表示する時にdecoratorは便利。
 
 
-##コード
+##Code
 
 	def login_required(func):
 	    def inner(*args,**kwargs):
@@ -20,7 +20,7 @@ tags: python,flask
 	    return inner
 
 
-##使い方
+##How to Use
 
 	# if user hasn't logined yet, then redirect("/").
 
