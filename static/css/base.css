@@ -186,4 +186,11 @@ span.date {
 
   }
 
+.read_all {
+  font-size: 18px;
+  float: right;
+  display: block;
+  padding: 15px;
+  line-height: 44px;
+}
 
