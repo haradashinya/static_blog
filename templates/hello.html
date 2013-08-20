@@ -5,7 +5,7 @@
 
 {% block content %}
 {% for page in pages %}
-<section class="item">
+<section class="item clearfix">
 
 
     <h2 class="title"><a class="" href="{{page.path+'/detail'}}">{{page.title}}</a></h2>
@@ -23,7 +23,10 @@
       {{" ".join( page.body.split("\n")[0:1]) |safe}}
       <br><br>
       <a href="{{page.path+'/detail'}}">(続きを読む)</a>
+
+      <span class="date">{{page.date}}</span>
     </div>
+
 
 
 </section>

@@ -8,12 +8,12 @@ hgroup {
 hgroup h1 a {
   color: white;
   font-size: 50px;
-  font-family: 'Chau Philomene One'
+  font-family: 'Chau Philomene One';
 
 }
 a,.title {
   color: #c0392b;
-  font-family: 'Chau Philomene One'
+  font-family: 'Chau Philomene One';
 }
 a:hover {
 }
@@ -76,8 +76,6 @@ nav div {
 }
 .page h3 {
   font-size: 16px;
-}
-.date {
 }
 
 .page li {
@@ -175,5 +173,12 @@ h2.title {
   font-size: 24px;
   line-height: 1.6em;
 }
+span.date {
+  font-size: 15px;
+  float: right;
+  font-family: 'Chau Philomene One';
+  color: #ccc;
+
+  }
 
 
