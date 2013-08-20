@@ -1,8 +1,9 @@
 title: JavascriptWeeklyを無限に読めるやつ作った
 date: 2013-03-11
+tags: js,python,app
 
 
-<a href="http://javascriptweekly.com/">JavascriptWeekly</a>というメールマガジンをを無限に読むことができるやつ作った。
+<a href="http://javascriptweekly.com/">JavascriptWeekly</a>というメールマガジンを無限に読むことができるやつ作った。
 <a href="http://whispering-ridge-5404.herokuapp.com/">Click Me.</a>
 
 AndroidのWebViewに対応出来れば、と思ったけど、かなり面倒な感じがあったし、
