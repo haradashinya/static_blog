@@ -108,6 +108,7 @@ nav div {
   border-radius: 5px;
 }
 .item h2 {
+  font-family: 'Chau Philomene One';
  }
 #archive .tags {
 }
@@ -175,6 +176,7 @@ h2.title {
   border: none;
   font-size: 24px;
   line-height: 1.6em;
+
 }
 span.date {
   font-size: 15px;
