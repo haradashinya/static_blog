@@ -12,7 +12,7 @@ At first, You start to mange your app by --initial
     python manage.py schemamigration YOUR_APP --initial
     python manage.py migrate YOUR_APP
 
-If you want to change columns of database, then type it.
+If you've  changed columns of database, then type it to reflect table.
 
     python manage.py schemamigration --auto YOUR_APP
     python manage.py migrate YOUR_APP
