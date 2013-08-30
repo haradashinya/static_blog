@@ -18,5 +18,11 @@
   <loc>http://pickalize.info/rss</loc>
   <priority>0.8</priority>
 </url>
+{% for page in pages %}
+<url>
+  <loc>http://pickalize.info/{{page.path}}/detail</loc>
+  <priority>0.8</priority>
+</url>
+{% endfor %}
 
 </urlset>
