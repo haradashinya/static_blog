@@ -24,9 +24,7 @@ def title(title = None):
 
 @app.route("/sitemap")
 def sitemap():
-    return render_template("sitemap.xml")
-
-
+    return render_template("sitemap.xml",pages=pages)
 
 @app.route("/memo/detail/")
 def memo():
