@@ -1,6 +1,6 @@
-title: ブログをHerokuで独自ドメインにて運用することにした。
+title: Flaskで作ったブログをHerokuで独自ドメインにて運用することにした。
 date: 2013-09-04
-tags: heroku
+tags: heroku,flask
 
 なんでもかんでもAmazon EC2でサーバーを運用すると、ものすごいカネがかかる。
 今、自分はお金がないので、削れるところは削りたい。
