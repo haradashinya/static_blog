@@ -1,5 +1,6 @@
 title: Vagrantの性能が遅さをnfsで解決
 date: 2013-09-03
+tags: vagrant,ubuntu
 
 最近はVagrantにつないでその中で開発を行っているけど、shared_folderの反応がすごい遅いし、
 git コマンドもインデックスに登録されたフォルダー数が多いとレスポンスがめちゃくちゃ遅い。
