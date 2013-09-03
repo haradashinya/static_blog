@@ -3,3 +3,4 @@ gunicorn>0.1
 Frozen-Flask
 Flask-FlatPages
 feedformatter
+feedgenerator
