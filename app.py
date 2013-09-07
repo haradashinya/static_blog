@@ -1,4 +1,5 @@
 #coding: utf-8
+import os
 from flask import Flask,render_template,redirect,url_for
 from flask_flatpages import FlatPages,pygments_style_defs
 from flask import g
@@ -24,9 +25,7 @@ def title(title = None):
 
 @app.route("/sitemap")
 def sitemap():
-    return render_template("sitemap.xml")
-
-
+    return render_template("sitemap.xml",pages=pages)
 
 @app.route("/memo/detail/")
 def memo():
@@ -123,7 +122,5 @@ def profile():
 def scripts():
     return render_template("scripts.html")
 
-if __name__ == "__main__":
-    app.debug=True
-    app.run(host="0.0.0.0",port=5000)
+
 
