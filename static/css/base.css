@@ -1,18 +1,23 @@
 body {
   background: #ecf0f1;
+  color: #222;
 
 }
 * {
 
   }
-hgroup {
-  padding-top: 30px;
+a:hover {
+    color: #f0392B
 }
+hgroup h1 a:hover {
+    color:  #fff;
+}
+
 hgroup h1 a {
+  padding-top: 30px;
   color: white;
   font-size: 50px;
   font-family: 'Chau Philomene One';
-
 }
 a,.title {
   color: #c0392b;
@@ -36,22 +41,22 @@ nav a{
   font-size: 20px;
   color: #303030;
   font-family: 'Cabin Condensed';
-  height: 30px;
-  line-height: 50px;
+  height: 40px;
+  line-height: 40px;
   width: 100px;
-  height: 50px;
+  height: 40px;
   display: block;
 }
 
 .header {
   background: #303030;
+  height: 100px;
+  margin-bottom: 30px;
 }
 #nav_wrapper {
   background: white;
 }
-nav {
 
-}
 nav div {
   float: left;
 }
@@ -103,15 +108,13 @@ nav div {
 .item {
   padding:20px;
   background: white;
-  margin-bottom: 30px;
-  box-shadow: 5px 5px 5px #ccc;
+  margin-bottom: 15px;
+  box-shadow: 1px 1px 10px #ccc;
   border-radius: 5px;
 }
 .item h2 {
   font-family: 'Chau Philomene One';
- }
-#archive .tags {
-}
+  }
 
 #archive li a {
 }
@@ -179,12 +182,12 @@ h2.title {
 
 }
 span.date {
-  font-size: 15px;
-  float: right;
-  font-family: 'Chau Philomene One';
-  color: #ccc;
+    font-size: 15px;
+    float: right;
+    font-family: 'Chau Philomene One';
+    color: #222;
 
-  }
+}
 
 .read_all {
   font-size: 18px;
