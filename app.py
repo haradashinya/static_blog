@@ -122,5 +122,8 @@ def profile():
 def scripts():
     return render_template("scripts.html")
 
+@app.route("/works")
+def works():
+    return render_template("works.html")
 
 
