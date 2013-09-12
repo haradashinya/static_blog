@@ -41,12 +41,14 @@ nav a{
   font-size: 20px;
   color: #303030;
   font-family: 'Cabin Condensed';
-  height: 40px;
+  height: 30px;
   line-height: 40px;
   width: 100px;
   height: 40px;
   display: block;
 }
+
+
 
 .header {
   background: #303030;
@@ -109,7 +111,7 @@ nav div {
   padding:20px;
   background: white;
   margin-bottom: 15px;
-  box-shadow: 1px 1px 10px #ccc;
+  box-shadow: 1px 1px 5px #333;
   border-radius: 5px;
 }
 .item h2 {
@@ -182,11 +184,9 @@ h2.title {
 
 }
 span.date {
-    font-size: 15px;
     float: right;
-    font-family: 'Chau Philomene One';
     color: #222;
-
+    font-size: 12px;
 }
 
 .read_all {
