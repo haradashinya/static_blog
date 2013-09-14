@@ -197,3 +197,7 @@ span.date {
   line-height: 44px;
 }
 
+.length {
+    float: right;
+    color: #777;
+}
