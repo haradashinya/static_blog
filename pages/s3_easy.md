@@ -21,7 +21,7 @@ Amazon S3はすごい便利なものだと思う。Dropboxだと容量の制限�
     cd /path/to/s3
     python gen.py
 
-をタイプして、config.jsonを作ってあげる。すると、AWS_SECRET_KEY,AWS_ACCESS_KEY,BUCKET_NAMEをそこに入力する。
+をタイプして、config.jsonを作ってあげる。すると、config.jsonの中にAWS_SECRET_KEY,AWS_ACCESS_KEY,BUCKET_NAMEの項目をを入力する。
 
 あとは、
 
