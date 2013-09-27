@@ -39,7 +39,7 @@
 
             <ul>
                 {% for p in relative_pages %}
-                <li><a href="{{p.meta.path}}">{{p.meta.get("title")}}</li>
+                <li><a href="/{{p.path}}/detail">{{p.meta.get("title")}}</li>
                 {% endfor %}
             </ul>
         </div>
