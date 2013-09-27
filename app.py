@@ -99,8 +99,7 @@ def index():
 def relative_pages(tag_name):
     import random
     res = []
-    if tag_name == "":
-        tag_name = "python"
+    tag_name = tag_name or "python"
 
     sorted_pages = sorted(pages,reverse=True,
                           key = lambda x: x.meta["date"])
@@ -111,7 +110,11 @@ def relative_pages(tag_name):
     max_lim = len(res)
     #最大10件までの関連するブログ記事を表示
     max_lim = 10 if max_lim > 10 else max_lim
+    #自分のブログ記事を排除してその後、配列をシャッフルする
+    res = res[1:]
+    random.shuffle(res)
     #最初の記事は自分自身の記事なので表示しない
+
     return res[1:max_lim]
 
 @app.route("/<path:path>/detail/")
