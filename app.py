@@ -27,6 +27,11 @@ def title(title = None):
 def sitemap():
     return render_template("sitemap.xml",pages=pages)
 
+
+
+
+
+
 @app.route("/memo/detail/")
 def memo():
     sorted_pages = sorted(pages,reverse=True,
@@ -90,24 +95,52 @@ def index():
 	return render_template("hello.html",pages=sorted_pages[0:20],page = None)
     # http://pickalize.info/sublime_setting/detail/
 
-# render detail view
+
+def relative_pages(tag_name):
+    import random
+    res = []
+    if tag_name == "":
+        tag_name = "python"
+
+    sorted_pages = sorted(pages,reverse=True,
+                          key = lambda x: x.meta["date"])
+    for page in sorted_pages:
+        tags = page.meta.get("tags","").split(",")
+        if tag_name in tags:
+            res.append(page)
+    max_lim = len(res)
+    #最大10件までの関連するブログ記事を表示
+    max_lim = 10 if max_lim > 10 else max_lim
+    #最初の記事は自分自身の記事なので表示しない
+    return res[1:max_lim]
+
 @app.route("/<path:path>/detail/")
 def d(path):
     page = pages.get_or_404(path)
     title = u"%s" % page.meta["title"]
     app.jinja_env.globals['title'] = title
     l = len(page.body.encode("utf-8").replace("\n","").decode("utf-8"))
-    print(l)
 
     page.meta["path"] = path
+    tag = (page.meta.get("tags") or "").split(",")[0]
 
-    return render_template('page.html', page=page,title=title,length = l)
+    return render_template('page.html', page=page,
+                           title=title,
+                           length = l,
+                           relative_pages = relative_pages(tag))
+
+
+
+
+
+
 
 @app.route("/<path:path>/")
 def detail(path):
     page = pages.get_or_404(path)
     page.meta["path"] = path
-    return render_template('page.html', page=page)
+    return render_template('page.html', page=page,
+                           relative_pages = relative_page("python"))
 
 @app.route("/apps")
 def apps():

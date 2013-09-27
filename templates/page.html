@@ -31,7 +31,20 @@
          {{page}}
         <p class="length">文字数:{{length}}</p>
       </div>
+
+        <div id="relative">
+            {% if relative_pages %}
+            <h2>おすすめの記事 ----</h2>
+            {% endif %}
+
+            <ul>
+                {% for p in relative_pages %}
+                <li><a href="{{p.meta.path}}">{{p.meta.get("title")}}</li>
+                {% endfor %}
+            </ul>
+        </div>
     </div>
+
 
 
 
