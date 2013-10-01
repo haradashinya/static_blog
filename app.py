@@ -33,18 +33,6 @@ def sitemap():
 def about():
     return render_template("about.html")
 
-
-
-@app.route("/memo/detail/")
-def memo():
-    sorted_pages = sorted(pages,reverse=True,
-    key = lambda p: p.meta["date"] )
-    for page in sorted_pages:
-        if page.meta.get("memo"):
-            print "exists"
-    memo_pages = [page for page in sorted_pages if page.meta.get("memo")]
-    return render_template("all.html",pages=memo_pages)
-
 @app.route("/rss")
 def rss():
     feed = feedgenerator.Rss201rev2Feed(
@@ -141,12 +129,7 @@ def d(path):
 
 
 
-@app.route("/<path:path>/")
-def detail(path):
-    page = pages.get_or_404(path)
-    page.meta["path"] = path
-    return render_template('page.html', page=page,
-                           relative_pages = relative_page("python"))
+
 
 @app.route("/apps")
 def apps():
