@@ -23,12 +23,21 @@
 <link rel="stylesheet" href="/static/css/base.css"/>
 <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 <meta name="google-site-verification" content="m0g7oa4aDFlxErEoYhS3rtwEpKaTazzp5pgkMUHG1ho" />
+
+
+
+<meta name="keywords" content="{{keywords}} ">
+<meta name="description" content="{{desc}} ">
+
 </head>
+
 <body>
+{{keywords}}
 <div class="header">
 <div class="row">
   <div class="large-12 small-12 columns">
     <hgroup>
+
     <h1><a href="/">Pickalize</a></h1>
     </hgroup>
   </div>
@@ -65,6 +74,7 @@
     <div class="page main">
       {% block content %}
       {% endblock content %}
+
     </div>
   </div>
 </div>
