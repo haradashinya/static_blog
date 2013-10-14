@@ -8,9 +8,8 @@
   {% endif %}
 
 <meta charset="utf-8">
+<META NAME="ROBOTS" CONTENT="INDEX,FOLLOW,ARCHIVE"
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Pythonでお気楽プログラミング">
-<meta name="keywords" content="python,ios,翻訳ニュース,wikipath">
 <meta name="author" content="nobinobiru">
 <link href='http://fonts.googleapis.com/css?family=Cabin+Condensed:400,500' rel='stylesheet' type='text/css'>
 
@@ -39,12 +38,21 @@
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
+
+
+
+<meta name="keywords" content="{{keywords}} ">
+<meta name="description" content="{{desc}} ">
+
 </head>
+
 <body>
+{{keywords}}
 <div class="header">
 <div class="row">
   <div class="large-12 small-12 columns">
     <hgroup>
+
     <h1><a href="/">Pickalize</a></h1>
     </hgroup>
   </div>
@@ -79,6 +87,7 @@
     <div class="page main">
       {% block content %}
       {% endblock content %}
+
     </div>
   </div>
 </div>

@@ -77,14 +77,21 @@ def archive():
 
 app.jinja_env.globals['title'] = title
 
+
+def set_keywords(keywords):
+    app.jinja_env.globals["keywords"]= keywords
+
+def set_desc(body):
+    app.jinja_env.globals["desc"] = body
+
+
 @app.route("/")
 def index():
+    sorted_pages = sorted(pages,reverse=True, key = lambda p: p.meta["date"] )
 
-	sorted_pages = sorted(pages,reverse=True,
-		key = lambda p: p.meta["date"] )
-
-	return render_template("hello.html",pages=sorted_pages[0:20],page = None)
-    # http://pickalize.info/sublime_setting/detail/
+    set_keywords("python,flask,heroku")
+    set_desc(u"お気楽Pythonプログラミング")
+    return render_template("hello.html",pages=sorted_pages[0:20],page = None)
 
 
 def relative_pages(tag_name):
@@ -117,6 +124,10 @@ def d(path):
 
     page.meta["path"] = path
     tag = (page.meta.get("tags") or "").split(",")[0]
+    print(page)
+    set_desc(page.body)
+    set_keywords(str(page.meta.get("tags")) or "")
+
 
     return render_template('page.html', page=page,
                            title=title,
